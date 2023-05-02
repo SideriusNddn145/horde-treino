@@ -13,23 +13,25 @@ class entidade{
 }
 
 class player extends entidade{
-    super(nome, nivel, hp, dano);
-
+    constructor(nome, nivel, hp, dano){
+        super(nome, nivel, hp, dano);
+    }
     
 }
 
 
 class boss extends entidade{
-    super(nome, nivel, hp, dano);
-
-    
+    constructor(nome, nivel, hp, dano){
+        super(nome, nivel, hp, dano);
+    }
 }
 
 class cripper extends entidade{
-    super(nome, nivel, hp, dano);
-
+    constructor(nome, nivel, hp, dano){
+        super(nome, nivel, hp, dano);
+    }
+    
     crippers;
-
     constructor(quantidade){
         this.crippers = new Array(quantidade);
             for(let i=0; i < quantidade; i++){
