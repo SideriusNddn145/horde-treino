@@ -27,18 +27,26 @@ class boss extends entidade{
 }
 
 class cripper extends entidade{
-    constructor(nome, nivel, hp, dano){
+    crippers;
+    
+    constructor(nome, nivel, hp, dano, quantidade){
         super(nome, nivel, hp, dano);
+        this.crippers = new Array(quantidade);
+            for(let i=0; i < quantidade; i++){
+                this.cripeers[i] = new crepper("Zezinho", 3, 20, 1);
+            }
+
+
     }
     
-    crippers;
+    /*crippers;
     constructor(quantidade){
         this.crippers = new Array(quantidade);
             for(let i=0; i < quantidade; i++){
                 this.crippers[i] = new cripper("Zezinho", 3, 20, 1);
             }  
 
-    }
+    }*/
 
 }
 
@@ -55,4 +63,9 @@ let abigail = new boss("Abigail, morreu e num viu", 15, 100, 7);
 
 console.log(zidero);
 console.log(horda);
+console.log(abigail);
+
+combate(zidero, abigail);
+
+console.log(zidero);
 console.log(abigail);
