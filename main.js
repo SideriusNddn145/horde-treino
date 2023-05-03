@@ -65,7 +65,10 @@ console.log(zidero);
 console.log(horda);
 console.log(abigail);
 
-combate(zidero, horda);
+for(let i=0; i < 10; i++){
+    combate(zidero, horda.crippers[i]);
+}
+combate(zidero, abigail);
 
 console.log(zidero);
 console.log(abigail);
