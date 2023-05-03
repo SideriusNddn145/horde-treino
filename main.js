@@ -33,7 +33,7 @@ class cripper extends entidade{
         super(nome, nivel, hp, dano);
         this.crippers = new Array(quantidade);
             for(let i=0; i < quantidade; i++){
-                this.cripeers[i] = new crepper("Zezinho", 3, 20, 1);
+                this.crippers[i] = new cripper("Zezinho", 3, 20, 1);
             }
 
 
@@ -58,14 +58,14 @@ function combate(entidade1, entidade2){
 
 
 let zidero = new player("Zidero", 20, 100, 10);
-let horda = new cripper(10);
+let horda = new cripper("Zezinho", 3, 20, 1, 10);
 let abigail = new boss("Abigail, morreu e num viu", 15, 100, 7);
 
 console.log(zidero);
 console.log(horda);
 console.log(abigail);
 
-combate(zidero, abigail);
+combate(zidero, horda);
 
 console.log(zidero);
 console.log(abigail);
